@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementi di soluzione", "El
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtAuth.Core.Tests", "JwtAuth.Core.Tests\JwtAuth.Core.Tests.csproj", "{B14F4075-A540-47C7-B952-F606861A5958}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Mvc", "Demo.Mvc\Demo.Mvc.csproj", "{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,18 @@ Global
 		{B14F4075-A540-47C7-B952-F606861A5958}.Release|x64.Build.0 = Release|Any CPU
 		{B14F4075-A540-47C7-B952-F606861A5958}.Release|x86.ActiveCfg = Release|Any CPU
 		{B14F4075-A540-47C7-B952-F606861A5958}.Release|x86.Build.0 = Release|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Debug|x64.Build.0 = Debug|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Debug|x86.Build.0 = Debug|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Release|x64.ActiveCfg = Release|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Release|x64.Build.0 = Release|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Release|x86.ActiveCfg = Release|Any CPU
+		{30EE3FD3-40CE-4EB8-B09A-8FDAEEC0BC35}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

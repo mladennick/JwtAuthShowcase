@@ -1,0 +1,44 @@
+@model IEnumerable<Demo.Mvc.Controllers.ExpensesController.ExpenseRowView>
+@{
+    ViewData["Title"] = "Expenses";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h3 mb-0">Expense Tracker</h1>
+    <a class="btn btn-primary" asp-controller="Expenses" asp-action="Create">Add Expense</a>
+</div>
+
+@if (TempData["SuccessMessage"] is string successMessage)
+{
+    <div class="alert alert-success" role="alert">
+        @successMessage
+    </div>
+}
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <p class="text-muted mb-3">
+            Placeholder list for MVC flow demonstration. Persistence and per-user filtering will be added in later steps.
+        </p>
+
+        <table class="table table-striped mb-0">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th class="text-end">Amount</th>
+                    <th class="text-end">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var expense in Model)
+            {
+                <tr>
+                    <td>@expense.Description</td>
+                    <td class="text-end">@expense.Amount.ToString("C")</td>
+                    <td class="text-end">@expense.Date.ToString("yyyy-MM-dd")</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

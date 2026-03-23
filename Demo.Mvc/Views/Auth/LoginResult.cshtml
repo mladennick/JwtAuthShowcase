@@ -1,0 +1,24 @@
+@model Demo.Mvc.Models.Auth.LoginResultViewModel
+@{
+    ViewData["Title"] = "Login Result";
+}
+
+<h1 class="h3 mb-3">Login Successful</h1>
+
+<div class="alert alert-success" role="alert">
+    JWT issued for <strong>@Model.Username</strong>.
+</div>
+
+<div class="card shadow-sm mb-3">
+    <div class="card-body">
+        <p class="mb-1"><strong>JWT Id (jti):</strong> @Model.JwtId</p>
+        <p class="mb-3"><strong>Expires (UTC):</strong> @Model.ExpiresAtUtc.ToString("u")</p>
+        <label class="form-label"><strong>Access Token</strong></label>
+        <textarea class="form-control" rows="6" readonly>@Model.AccessToken</textarea>
+    </div>
+</div>
+
+<div class="d-flex gap-2">
+    <a class="btn btn-primary" asp-action="Sessions">View Session Table</a>
+    <a class="btn btn-outline-secondary" asp-controller="Expenses" asp-action="Index">Go to Expenses</a>
+</div>
